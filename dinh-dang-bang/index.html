@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Định kiểu cho bảng trong CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fa;
+            margin: 0;
+            padding: 30px;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 17px;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* 1. Bảng cơ bản có đường viền */
+        .table-basic, .table-basic th, .table-basic td {
+            border: 1px solid black;
+        }
+
+        /* 2. Bảng gộp viền (border-collapse) */
+        .table-collapse {
+            border-collapse: collapse;
+        }
+        .table-collapse, .table-collapse th, .table-collapse td {
+            border: 1px solid black;
+        }
+
+        /* 3. Bảng tùy chỉnh chiều rộng, chiều cao, căn chỉnh ngang & dọc */
+        .table-align {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-align, .table-align th, .table-align td {
+            border: 1px solid #bdc3c7;
+        }
+        .table-align th {
+            height: 50px;
+            text-align: left;
+            padding: 10px;
+            background-color: #ecf0f1;
+        }
+        .table-align td {
+            height: 70px;
+            vertical-align: bottom;
+            padding: 10px;
+        }
+
+        /* 4. Bảng hoàn chỉnh: Màu sắc, padding, hover */
+        .table-styled {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-styled, .table-styled th, .table-styled td {
+            border: 1px solid #dcdde1;
+        }
+        .table-styled th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .table-styled td {
+            background-color: #f8f9fa;
+            color: #333333;
+            padding: 15px;
+        }
+        .table-styled tr:hover td {
+            background-color: #e8f4fd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thực Hành: Định Kiểu Cho Bảng Trong CSS</h1>
+
+        <div class="card">
+            <h2>1. Đường viền của bảng (Đường viền kép mặc định)</h2>
+            <table class="table-basic">
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tuổi</th>
+                    <th>Lớp</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn A</td>
+                    <td>20</td>
+                    <td>Web</td>
+                </tr>
+                <tr>
+                    <td>Trần Thị B</td>
+                    <td>21</td>
+                    <td>Web</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>2. Gộp đường viền duy nhất (border-collapse: collapse)</h2>
+            <table class="table-collapse">
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tuổi</th>
+                    <th>Lớp</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn A</td>
+                    <td>20</td>
+                    <td>Web</td>
+                </tr>
+                <tr>
+                    <td>Trần Thị B</td>
+                    <td>21</td>
+                    <td>Web</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>3. Căn chỉnh ngang (text-align) và dọc (vertical-align: bottom)</h2>
+            <table class="table-align">
+                <tr>
+                    <th>Họ tên (Căn trái)</th>
+                    <th>Tuổi (Căn trái)</th>
+                    <th>Lớp (Căn trái)</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn A</td>
+                    <td>20</td>
+                    <td>Web</td>
+                </tr>
+                <tr>
+                    <td>Trần Thị B</td>
+                    <td>21</td>
+                    <td>Web</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>4. Bảng tổng hợp hoàn chỉnh (Màu sắc, padding 15px, hiệu ứng hover)</h2>
+            <table class="table-styled">
+                <tr>
+                    <th>Họ tên</th>
+                    <th>Tuổi</th>
+                    <th>Lớp</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn A</td>
+                    <td>20</td>
+                    <td>Web</td>
+                </tr>
+                <tr>
+                    <td>Trần Thị B</td>
+                    <td>21</td>
+                    <td>Web</td>
+                </tr>
+                <tr>
+                    <td>Lê Văn C</td>
+                    <td>22</td>
+                    <td>Web</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
