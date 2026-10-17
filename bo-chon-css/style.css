@@ -1,0 +1,82 @@
+﻿/* 1. Element Selector & Đổi màu nền trang web */
+body {
+    background-color: #eef2f7;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* 2. Class Selector cho khung bao */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Grouping Selector & Căn giữa tiêu đề h1 */
+h1, h2 {
+    color: #2c3e50;
+}
+
+#main-title {
+    text-align: center;
+    color: #1a73e8;
+    margin-top: 0;
+}
+
+/* 4. Đoạn văn mô tả */
+.intro-desc {
+    line-height: 1.6;
+    font-size: 15px;
+    color: #555555;
+    text-align: justify;
+}
+
+/* 5. Định dạng danh sách sở thích với các màu sắc khác nhau */
+#hobby-list {
+    list-style-type: square;
+    padding-left: 25px;
+    line-height: 2;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hobby-reading {
+    color: #e67e22;
+}
+
+.hobby-coding {
+    color: #2980b9;
+}
+
+.hobby-travel {
+    color: #27ae60;
+}
+
+/* 6. Nút bấm và Pseudo-class :hover */
+.action-box {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.custom-btn {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: #0d47a1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 71, 161, 0.3);
+}
