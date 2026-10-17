@@ -1,0 +1,114 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #ffffff;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 17px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* 2. Kiểu hình vuông */
+.list-square {
+    list-style-type: square;
+    line-height: 1.8;
+}
+
+/* 3. Kiểu số La Mã viết hoa */
+.list-roman {
+    list-style-type: upper-roman;
+    line-height: 1.8;
+}
+
+/* 4. Dấu bằng hình ảnh */
+.list-image {
+    list-style-image: url('check.svg');
+    line-height: 2;
+}
+
+/* 5. Vị trí outside và inside */
+.grid-2 {
+    display: flex;
+    gap: 20px;
+}
+.grid-2 > div {
+    flex: 1;
+}
+.pos-outside {
+    list-style-position: outside;
+    background-color: #e8f0fe;
+    padding: 15px 15px 15px 35px;
+    border-radius: 4px;
+}
+.pos-inside {
+    list-style-position: inside;
+    background-color: #fef7e0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* 6. Thuộc tính rút gọn */
+.list-shorthand {
+    list-style: square inside;
+    line-height: 1.8;
+}
+
+/* 7. Màu sắc và khoảng cách */
+.list-color {
+    background-color: #e8f5e9;
+    padding: 20px 35px;
+    border-radius: 6px;
+    list-style-type: circle;
+}
+.list-color li {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border-left: 4px solid #4caf50;
+}
+
+/* 8. Lộ trình tổng hợp */
+.roadmap-list {
+    list-style: square inside;
+    background-color: #1a73e8;
+    padding: 20px;
+    border-radius: 8px;
+}
+.roadmap-list li {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
