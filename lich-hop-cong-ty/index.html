@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>Lịch họp công ty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f7f9fa;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            max-width: 650px;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        th, td {
+            border: 1px solid #dcdde1;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .all-day {
+            background-color: #e8f4fd;
+            font-weight: bold;
+            color: #1976d2;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lịch họp công ty</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Ngày</th>
+                <th>Giờ</th>
+                <th>Nội dung cuộc họp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">20/10/2026</td>
+                <td>08:30 - 09:30</td>
+                <td>Họp giao ban đầu tuần phòng CNTT</td>
+            </tr>
+            <tr>
+                <td>14:00 - 15:30</td>
+                <td>Đánh giá tiến độ dự án Web Frontend</td>
+            </tr>
+            <tr>
+                <td>21/10/2026</td>
+                <td colspan="2" class="all-day">08:00 - 17:00: Hội thảo chiến lược kinh doanh toàn công ty (Cả ngày)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">22/10/2026</td>
+                <td>09:00 - 10:30</td>
+                <td>Phỏng vấn tuyển dụng nhân viên mới</td>
+            </tr>
+            <tr>
+                <td>15:00 - 16:30</td>
+                <td>Họp nghiệm thu kết quả tuần</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
