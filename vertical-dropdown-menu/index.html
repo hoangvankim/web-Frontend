@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Hướng dẫn tạo Menu Dropdown dọc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            margin: 40px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        #menu, #menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Định dạng các mục chính trong danh sách */
+        #menu li {
+            list-style: none;
+            position: relative;
+            width: 120px;
+            height: 30px;
+            padding: 0 20px;
+            background-color: black;
+            line-height: 30px;
+            cursor: pointer;
+            border-bottom: 1px solid #333333;
+        }
+
+        /* Định dạng liên kết */
+        #menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Hiệu ứng đổi màu nền khi rê chuột vào */
+        #menu li:hover {
+            background-color: #444444;
+        }
+
+        /* Định dạng danh sách con dropdown: ẩn mặc định và định vị sang phải 160px */
+        #menu li ul {
+            position: absolute;
+            top: 0;
+            left: 160px;
+            visibility: hidden;
+            border-left: 2px solid #e74c3c;
+        }
+
+        /* Hiển thị danh sách con khi rê chuột vào li cha */
+        #menu li:hover > ul {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menu Dropdown Dọc</h2>
+    <div id="menu">
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li>
+                <a href="#services">Dịch vụ &raquo;</a>
+                <ul>
+                    <li><a href="#web">Thiết kế Web</a></li>
+                    <li><a href="#seo">Dịch vụ SEO</a></li>
+                    <li><a href="#app">Lập trình App</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#products">Sản phẩm &raquo;</a>
+                <ul>
+                    <li><a href="#phone">Điện thoại</a></li>
+                    <li><a href="#laptop">Máy tính</a></li>
+                    <li><a href="#tablet">Máy tính bảng</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </div>
+</body>
+</html>
