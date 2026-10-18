@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+/* Ví dụ 1: 3 cột bằng nhau (1fr 1fr 1fr) */
+.grid-equal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-equal div {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #0d47a1;
+}
+
+/* Ví dụ 2: Các cột có kích thước khác nhau (100px 200px 1fr) */
+.grid-different {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr;
+    gap: 10px;
+}
+
+.grid-different div {
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #1b5e20;
+}
