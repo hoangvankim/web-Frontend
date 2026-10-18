@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidsCartoon - Thế Giới Phim Hoạt Hình Chọn Lọc Cho Trẻ Em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Header cố định (Fixed Header) & Head-link -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="#">🎬 Kids<span>Cartoon</span></a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm phim hoạt hình..." />
+                <button type="button">Tìm</button>
+            </div>
+
+            <nav class="head-link">
+                <ul>
+                    <li><a href="#" class="active">Trang chủ</a></li>
+                    <li><a href="#">Mới cập nhật</a></li>
+                    <li><a href="#">Xem nhiều nhất</a></li>
+                    <li><a href="#">Thuyết minh</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Bố cục nội dung chính (Content) -->
+    <div class="page-body">
+        <div class="content-wrapper">
+            <!-- Left Content: Danh sách video có sẵn -->
+            <aside class="left-content">
+                <h3 class="sidebar-title">Danh Sách Phim Hay</h3>
+                <div class="video-list">
+                    <div class="video-item active-video">
+                        <div class="video-thumb">🐰</div>
+                        <div class="video-info">
+                            <h4>Big Buck Bunny - Chú Thỏ Vui Nhộn</h4>
+                            <span class="badge">FullHD 1080p</span>
+                            <span class="views">125K lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumb">🐱</div>
+                        <div class="video-info">
+                            <h4>Tom & Jerry: Mèo Chuột Đại Chiến</h4>
+                            <span class="badge">HD 720p</span>
+                            <span class="views">2.4M lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumb">🤖</div>
+                        <div class="video-info">
+                            <h4>Doraemon: Bảo Bối Kỳ Diệu</h4>
+                            <span class="badge">FullHD 1080p</span>
+                            <span class="views">980K lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumb">🪳</div>
+                        <div class="video-info">
+                            <h4>Oggy Và Những Chú Gián Tinh Nghịch</h4>
+                            <span class="badge">HD 720p</span>
+                            <span class="views">1.1M lượt xem</span>
+                        </div>
+                    </div>
+
+                    <div class="video-item">
+                        <div class="video-thumb">🐷</div>
+                        <div class="video-info">
+                            <h4>Peppa Pig: Chuyến Dã Ngoại Thú Vị</h4>
+                            <span class="badge">FullHD 1080p</span>
+                            <span class="views">650K lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Content: Khu vực phát video -->
+            <main class="right-content">
+                <!-- Video chính sử dụng thẻ <video> HTML5 -->
+                <div class="player-container">
+                    <h2 class="section-heading">Khu Vực Xem Video Trực Tuyến (Không Quảng Cáo)</h2>
+                    <div class="video-player-box">
+                        <video controls poster="https://peach.blender.org/wp-content/uploads/title_shot.gif">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ phát thẻ video.
+                        </video>
+                    </div>
+
+                    <div class="video-meta">
+                        <h2>Big Buck Bunny - Cuộc Phiêu Lưu Của Chú Thỏ Khổng Lồ</h2>
+                        <div class="meta-tags">
+                            <span class="tag-quality">Chất lượng: FullHD 1080p</span>
+                            <span class="tag-audio">Thuyết minh Tiếng Việt</span>
+                            <span class="tag-safe">100% An toàn cho trẻ em</span>
+                        </div>
+                        <p class="description">
+                            Bộ phim hoạt hình 3D hấp dẫn về chú thỏ Big Buck Bunny cùng những người bạn động vật trong khu rừng kỳ diệu. Video được chọn lọc với độ nét cao, tốc độ tải nhanh, không chứa bất kỳ nội dung bạo lực hay quảng cáo gây phiền toái cho các bé.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Video tham khảo nhúng bằng thẻ <iframe> YouTube -->
+                <div class="embed-container">
+                    <h3>Gợi Ý Thêm: Video Phim Hoạt Hình Nhúng Từ YouTube (iframe)</h3>
+                    <div class="iframe-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                            title="YouTube cartoon video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- 3. Footer: Thông tin bản quyền -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p>&copy; 2026 KidsCartoon - Kênh Phim Hoạt Hình Trực Tuyến An Toàn Dành Cho Trẻ Em.</p>
+            <p>Cam kết chất lượng chuẩn HD 720p - 1080p &bull; Hoàn toàn không quảng cáo &bull; Thuyết minh tiếng Việt chuẩn.</p>
+        </div>
+    </footer>
+</body>
+</html>
