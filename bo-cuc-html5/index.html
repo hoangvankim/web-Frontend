@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web sử dụng thẻ HTML5 ngữ nghĩa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 1. Thẻ header: Phần đầu trang web -->
+        <header>
+            <h1>Cổng Thông Tin Công Nghệ & Lập Trình</h1>
+            <p>Học tập và phát triển kỹ năng Web Frontend với chuẩn HTML5 & CSS3</p>
+        </header>
+
+        <!-- 2. Thẻ nav: Thanh điều hướng trang -->
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#articles">Bài viết</a></li>
+                <li><a href="#courses">Khóa học</a></li>
+                <li><a href="#tutorials">Hướng dẫn</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Khung chứa nội dung chính và sidebar -->
+        <div class="main-body">
+            <!-- 3. Thẻ section: Khu vực nội dung bài viết chính -->
+            <section class="content-section">
+                <!-- 4. Thẻ article: Từng bài viết độc lập -->
+                <article class="post-item">
+                    <h2>Tại sao nên sử dụng các thẻ HTML5 Semantic?</h2>
+                    <p class="post-meta">Đăng bởi <strong>Hoàng Văn Kim</strong> | Chuyên mục: HTML5 & CSS3</p>
+                    <p>Các thẻ ngữ nghĩa như <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code> và <code>&lt;footer&gt;</code> giúp cấu trúc mã nguồn trở nên rõ ràng hơn, hỗ trợ tối ưu SEO cho công cụ tìm kiếm và tăng khả năng tiếp cận (Accessibility) cho người dùng.</p>
+                </article>
+
+                <article class="post-item">
+                    <h2>Lộ trình làm chủ kỹ thuật dàn trang hiện đại</h2>
+                    <p class="post-meta">Đăng ngày 18/10/2026 | Lượt đọc: 1.250</p>
+                    <p>Từ việc sử dụng thuộc tính <code>float</code> truyền thống đến các công nghệ hiện đại như <strong>Flexbox</strong> và <strong>CSS Grid</strong>, việc kết hợp linh hoạt các thẻ HTML5 giúp bạn xây dựng mọi layout website một cách nhanh chóng và chuẩn mực.</p>
+                </article>
+            </section>
+
+            <!-- 5. Thẻ aside: Sidebar chứa thông tin bổ trợ -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Chủ Đề Quan Tâm</h3>
+                    <ul>
+                        <li><a href="#">Thẻ ngữ nghĩa HTML5</a></li>
+                        <li><a href="#">Bố cục Flexbox & Grid</a></li>
+                        <li><a href="#">Responsive Web Design</a></li>
+                        <li><a href="#">Tối ưu hóa hiệu năng Web</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Thông Báo Khóa Học</h3>
+                    <p>Lớp thực hành Web Frontend K1S2 - CodeGym đang triển khai các bài tập thực hành giao diện chuyên sâu.</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- 6. Thẻ footer: Phần chân trang -->
+        <footer>
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym &bull; Thiết kế chuẩn cấu trúc thẻ HTML5 ngữ nghĩa</p>
+            <p>Email: contact@codegym.vn | Điện thoại: 1800 6969 | Địa chỉ: Hà Nội, Việt Nam</p>
+        </footer>
+    </div>
+</body>
+</html>
