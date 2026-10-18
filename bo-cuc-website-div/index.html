@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web bằng thẻ DIV và CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- 1. Phân vùng đầu trang: Logo và Banner -->
+        <div id="head">
+            <h1>LOGO & BANNER WEBSITE</h1>
+            <p>Hệ thống cổng thông tin đào tạo công nghệ</p>
+        </div>
+
+        <!-- 2. Phân vùng liên kết đầu trang -->
+        <div id="head-link">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Học viên</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+
+        <!-- 3. Khu vực 3 cột giữa trang -->
+        <div id="body-container">
+            <!-- Cột trái -->
+            <div id="left">
+                <h3>Danh Mục Trái</h3>
+                <ul>
+                    <li><a href="#">Chương trình Frontend</a></li>
+                    <li><a href="#">Chương trình Backend</a></li>
+                    <li><a href="#">Lập trình Di động</a></li>
+                    <li><a href="#">Cơ sở dữ liệu</a></li>
+                    <li><a href="#">Kiểm thử phần mềm</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột giữa: Nội dung chính -->
+            <div id="content">
+                <h2>Tin Nổi Bật (Hot News)</h2>
+                <div class="news-banner">
+                    <h3>Khởi Động Dự Án Web Frontend K1S2</h3>
+                    <p>Học viên tham gia thực hành tạo giao diện trang web hoàn chỉnh bằng thẻ DIV và kỹ thuật dàn trang CSS Float.</p>
+                </div>
+
+                <h2>Thông Tin Chi Tiết</h2>
+                <p>Nội dung trang web được phân bổ hợp lý theo cấu trúc 3 cột truyền thống, đảm bảo tính trực quan, dễ quản lý thông tin và tối ưu trải nghiệm cho người dùng khi truy cập.</p>
+                <p>Các phân vùng được điều khiển hoàn toàn bằng các thuộc tính CSS như <code>float: left;</code>, <code>margin</code>, <code>padding</code> và <code>clear: both;</code>.</p>
+            </div>
+
+            <!-- Cột phải -->
+            <div id="right">
+                <h3>Tiện Ích Phải</h3>
+                <div class="widget">
+                    <h4>Lịch Học</h4>
+                    <p>Thứ 2 - 4 - 6 hàng tuần</p>
+                </div>
+                <div class="widget">
+                    <h4>Hỗ Trợ Trực Tuyến</h4>
+                    <p>Hotline: 0901.234.567</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Phân vùng cuối trang -->
+        <div id="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym &bull; Thiết kế bố cục chuẩn thẻ DIV và CSS</p>
+            <p>Địa chỉ: Hà Nội &bull; Hotline: 1800 6969 &bull; Email: contact@codegym.vn</p>
+        </div>
+    </div>
+</body>
+</html>
