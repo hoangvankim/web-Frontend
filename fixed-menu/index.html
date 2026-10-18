@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Hướng dẫn tạo Fixed Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555555;
+            color: #ffffff;
+        }
+
+        .navbar a.active {
+            background-color: #1a73e8;
+            color: #ffffff;
+        }
+
+        .main {
+            padding: 20px 30px;
+            margin-top: 55px;
+            height: 1500px;
+            background-color: #f9f9f9;
+            line-height: 1.8;
+        }
+
+        .main h1 {
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        .main h2 {
+            color: #16a085;
+            font-size: 18px;
+        }
+
+        .demo-box {
+            background-color: #ffffff;
+            border-left: 4px solid #1a73e8;
+            padding: 15px 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div class="main">
+        <h1>Fixed Top Menu</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+        <div class="demo-box">
+            <p><strong>Thử nghiệm cuộn trang:</strong> Hãy dùng con lăn chuột cuộn trang xuống phía dưới. Bạn sẽ thấy thanh menu màu đen phía trên luôn được giữ cố định ở mép trên của màn hình nhờ thuộc tính <code>position: fixed; top: 0;</code>.</p>
+        </div>
+
+        <p>Some text some text some text some text some text some text some text some text some text...</p>
+        <p>Some text some text some text some text some text some text some text some text some text...</p>
+        <p>Some text some text some text some text some text some text some text some text some text...</p>
+        <p>Some text some text some text some text some text some text some text some text some text...</p>
+        <p>Some text some text some text some text some text some text some text some text some text...</p>
+    </div>
+</body>
+</html>
