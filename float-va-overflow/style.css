@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f7f9fa;
+    color: #333333;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Khối bao bọc 2 cột float, dùng overflow: hidden để clear float */
+.container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.left-column {
+    width: 50%;
+    float: left;
+    background-color: lightgray;
+    padding: 20px;
+    min-height: 150px;
+}
+
+.right-column {
+    width: 50%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    min-height: 150px;
+}
+
+/* Khối xử lý tràn nội dung */
+.overflow-box {
+    width: 320px;
+    height: 110px;
+    background-color: lightcoral;
+    color: #ffffff;
+    padding: 12px;
+    overflow: auto;
+    border-radius: 6px;
+    line-height: 1.5;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
