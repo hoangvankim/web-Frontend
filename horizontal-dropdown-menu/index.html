@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Hướng dẫn tạo Menu Dropdown hàng ngang</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fa;
+            padding: 50px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+        }
+
+        /* Phân vùng cho trình đơn: chiều cao, màu nền */
+        #menu {
+            height: 42px;
+            background-color: #222222;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        #menu ul {
+            list-style: none;
+        }
+
+        /* Định dạng các mục chọn cấp 1 nằm ngang và làm điểm neo relative cho menu con */
+        #menu ul li {
+            float: left;
+            position: relative;
+        }
+
+        /* Định dạng liên kết trong trình đơn: chiều rộng, chiều cao, căn giữa */
+        #menu ul li a {
+            display: block;
+            width: 140px;
+            height: 42px;
+            line-height: 42px;
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            background-color: #222222;
+            transition: background-color 0.2s;
+        }
+
+        /* Chuyển màu nền sang màu đỏ khi đưa con trỏ chuột qua */
+        #menu ul li a:hover {
+            background-color: red;
+        }
+
+        /* Định dạng danh sách con: thả xuống phía dưới, ẩn mặc định bằng visibility */
+        #menu ul ul {
+            position: absolute;
+            top: 42px;
+            left: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #menu ul ul li {
+            float: none;
+        }
+
+        #menu ul ul li a {
+            background-color: #333333;
+            border-top: 1px solid #444444;
+            text-align: left;
+            padding-left: 18px;
+            font-size: 14px;
+        }
+
+        #menu ul ul li a:hover {
+            background-color: red;
+        }
+
+        /* Hiển thị danh sách con khi đưa con trỏ qua mục chọn cha */
+        #menu ul li:hover > ul {
+            visibility: visible;
+        }
+
+        .content-demo {
+            margin-top: 40px;
+            color: #555555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h2>Menu Dropdown Hàng Ngang</h2>
+    <div id="menu">
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li>
+                <a href="#about">Giới thiệu &#9662;</a>
+                <ul>
+                    <li><a href="#history">Lịch sử</a></li>
+                    <li><a href="#vision">Tầm nhìn</a></li>
+                    <li><a href="#team">Đội ngũ</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#services">Dịch vụ &#9662;</a>
+                <ul>
+                    <li><a href="#web">Thiết kế Web</a></li>
+                    <li><a href="#app">Lập trình App</a></li>
+                    <li><a href="#seo">Dịch vụ SEO</a></li>
+                </ul>
+            </li>
+            <li><a href="#products">Sản phẩm</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </div>
+
+    <div class="content-demo">
+        <p><strong>Hướng dẫn thử nghiệm:</strong> Rê chuột vào mục <em>"Giới thiệu"</em> hoặc <em>"Dịch vụ"</em>, thanh menu con sẽ buông xuống phía dưới và các mục chuyển sang màu đỏ khi rê chuột.</p>
+    </div>
+</body>
+</html>
