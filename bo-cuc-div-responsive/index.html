@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web bằng thẻ DIV và CSS Responsive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <h1>TIÊU ĐỀ TRANG WEB (HEADER)</h1>
+            <p>Mô tả trang web sử dụng bố cục DIV kết hợp CSS Responsive</p>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="#">Trang chủ</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Main Body: 3 cột -->
+        <div class="main-container">
+            <!-- Cột trái -->
+            <div class="col col-left">
+                <h3>Cột Trái (Sidebar 1)</h3>
+                <p>Khu vực danh mục liên kết hoặc điều hướng phụ:</p>
+                <ul>
+                    <li><a href="#">Khóa học Frontend</a></li>
+                    <li><a href="#">Khóa học Backend</a></li>
+                    <li><a href="#">Lập trình React</a></li>
+                    <li><a href="#">Kiểm thử phần mềm</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột giữa: Nội dung chính -->
+            <div class="col col-center">
+                <h2>Nội Dung Chính (Content)</h2>
+                <p>Trang web này được xây dựng hoàn toàn bằng các thẻ <code>&lt;div&gt;</code> ngữ cảnh kết hợp CSS Flexbox và Media Queries để tạo ra bố cục đa cột linh hoạt.</p>
+                <p><strong>Tính năng Responsive:</strong></p>
+                <p>&bull; <em>Trên màn hình máy tính (Desktop):</em> Hiển thị rõ ràng thành 3 cột độc lập.</p>
+                <p>&bull; <em>Trên màn hình điện thoại (Mobile):</em> Khi thu nhỏ chiều ngang dưới 768px, cả 3 cột và thanh menu sẽ tự động xếp chồng lên nhau thành 1 cột duy nhất, không bị tràn hay vỡ giao diện.</p>
+            </div>
+
+            <!-- Cột phải -->
+            <div class="col col-right">
+                <h3>Cột Phải (Sidebar 2)</h3>
+                <p>Khu vực hiển thị thông tin bổ sung, widget quảng cáo hoặc tin mới nhất.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym &bull; Bố cục DIV và CSS Responsive chuẩn</p>
+        </div>
+    </div>
+</body>
+</html>

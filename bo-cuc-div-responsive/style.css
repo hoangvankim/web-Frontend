@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #e3f2fd;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+    background-color: #e74c3c;
+}
+
+/* Khối nội dung chứa 3 cột */
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+.col {
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.col h2, .col h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+.col-left {
+    flex: 1;
+    background-color: #e3f2fd;
+}
+
+.col-left ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+.col-left ul li {
+    margin-bottom: 8px;
+}
+
+.col-left a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.col-left a:hover {
+    text-decoration: underline;
+}
+
+.col-center {
+    flex: 2.5;
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+}
+
+.col-center p {
+    font-size: 14.5px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.col-right {
+    flex: 1;
+    background-color: #e8f5e9;
+    font-size: 14px;
+    color: #2e7d32;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 13.5px;
+}
+
+/* Responsive Media Queries (Mobile & Tablet) */
+@media (max-width: 768px) {
+    body {
+        padding: 8px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        border-top: 1px solid #3d566e;
+    }
+
+    .main-container {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
