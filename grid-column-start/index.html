@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành: grid-column-start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thực Hành: Thuộc tính grid-column-start trong CSS Grid</h1>
+
+    <!-- 1. Giá trị auto -->
+    <div class="card">
+        <h2>1. Giá trị auto (Sắp xếp theo luồng mặc định)</h2>
+        <div class="grid-container grid-auto">
+            <div class="item-highlight">Item 1 (auto)</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+        </div>
+    </div>
+
+    <!-- 2. Giá trị span n -->
+    <div class="card">
+        <h2>2. Giá trị span n (grid-column-start: span 2)</h2>
+        <div class="grid-container grid-span">
+            <div class="item-highlight">Item 1 (span 2)</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+        </div>
+    </div>
+
+    <!-- 3. Giá trị column-line -->
+    <div class="card">
+        <h2>3. Giá trị column-line (grid-column-start: 2 - Bắt đầu từ vạch kẻ 2)</h2>
+        <div class="grid-container grid-line">
+            <div class="item-highlight">Item 1 (bắt đầu vạch 2)</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+        </div>
+    </div>
+</body>
+</html>
