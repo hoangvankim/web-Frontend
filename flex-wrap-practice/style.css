@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px 20px;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+/* Khung Flexbox Container */
+.container {
+    display: flex;
+    width: 600px;
+    gap: 10px;
+    border: 2px dashed #95a5a6;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.item {
+    width: 150px;
+    padding: 25px 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* 1. nowrap: Không xuống dòng */
+.wrap-nowrap {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.wrap-nowrap .item {
+    background-color: #a8dadc;
+    color: #1d3557;
+}
+
+/* 2. wrap: Xuống dòng bình thường */
+.wrap-wrap {
+    flex-wrap: wrap;
+}
+.wrap-wrap .item {
+    background-color: #81c784;
+    color: #1b5e20;
+}
+
+/* 3. wrap-reverse: Xuống dòng đảo ngược trục chéo */
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+    height: 220px;
+}
+.wrap-reverse .item {
+    background-color: #e57373;
+    color: #b71c1c;
+}
+
+/* 4. initial: Trở về giá trị mặc định nowrap */
+.wrap-initial {
+    flex-wrap: initial;
+    overflow-x: auto;
+}
+.wrap-initial .item {
+    background-color: #fff59d;
+    color: #f57f17;
+}
