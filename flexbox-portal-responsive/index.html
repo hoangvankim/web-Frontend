@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Trang Web Responsive - CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">PORTAL<span>TECH</span></div>
+            <p class="tagline">Trang Thông Tin Công Nghệ & Đời Sống</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li><a href="#" class="active">Trang Chủ</a></li>
+            <li><a href="#">Tin Tức</a></li>
+            <li><a href="#">Công Nghệ</a></li>
+            <li><a href="#">Khóa Học</a></li>
+            <li><a href="#">Diễn Đàn</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Wrapper chứa Main Content và Sidebar -->
+    <div class="main-wrapper">
+        <!-- Main Content -->
+        <main class="content">
+            <article class="post-card">
+                <h2>Khám Phá Sức Mạnh Của CSS Flexbox Trong Thiết Kế Web Hiện Đại</h2>
+                <div class="post-meta">Đăng bởi <strong>Admin</strong> | Ngày 24/10/2026 | Chuyên mục: <em>Frontend Dev</em></div>
+                <p>
+                    CSS Flexible Box Layout (Flexbox) là một module bố cục một chiều được thiết kế để phân bổ không gian giữa các phần tử trong một container và cung cấp khả năng căn chỉnh mạnh mẽ. Với Flexbox, việc xử lý căn giữa, kéo giãn tỷ lệ và đảo ngược chiều hiển thị trở nên đơn giản hơn bao giờ hết.
+                </p>
+                <p>
+                    Đặc biệt khi thiết kế giao diện Responsive, Flexbox cho phép các phần tử tự động co dãn theo kích thước màn hình mà không cần tính toán tọa độ thủ công.
+                </p>
+            </article>
+
+            <article class="post-card">
+                <h2>Phương Pháp Xây Dựng Giao Diện Thích Ứng (Responsive) Đa Thiết Bị</h2>
+                <div class="post-meta">Đăng bởi <strong>Ban Biên Tập</strong> | Ngày 24/10/2026 | Chuyên mục: <em>UI/UX Design</em></div>
+                <p>
+                    Khi kết hợp thuộc tính <code>flex-direction</code> với <code>@media query</code>, chúng ta dễ dàng chuyển đổi bố cục từ đa cột nằm ngang trên Desktop sang một cột duy nhất xếp dọc trên điện thoại thông minh, đem lại trải nghiệm đọc nội dung liền mạch nhất cho người dùng.
+                </p>
+            </article>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Tin Nổi Bật</h3>
+                <ul class="widget-list">
+                    <li><a href="#">Xu hướng thiết kế Web năm 2026</a></li>
+                    <li><a href="#">Tối ưu hóa hiệu năng với CSS hiện đại</a></li>
+                    <li><a href="#">Lộ trình trở thành Frontend Developer</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Quảng Cáo & Liên Kết</h3>
+                <div class="ad-box">
+                    <p>Khóa học Frontend Master tại CodeGym</p>
+                    <button type="button">Tìm hiểu ngay</button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 PortalTech. Dự án bài tập CSS Flexbox Responsive Layout.</p>
+            <p>Học viên: Hoàng Văn Kim | Đào tạo Frontend Internship</p>
+        </div>
+    </footer>
+</body>
+</html>
