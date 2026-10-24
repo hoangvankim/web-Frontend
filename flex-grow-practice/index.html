@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành: flex-grow trong CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thực Hành: Thuộc tính flex-grow trong CSS Flexbox</h1>
+
+    <div class="card">
+        <h2>Ví dụ: Vùng chứa gồm 5 Flex Items (Div thứ 2 có flex-grow lớn hơn)</h2>
+        <div class="container">
+            <div class="item">Item 1 (grow: 1)</div>
+            <div class="item item-grow-large">Item 2 (grow: 3)</div>
+            <div class="item">Item 3 (grow: 1)</div>
+            <div class="item">Item 4 (grow: 1)</div>
+            <div class="item">Item 5 (grow: 1)</div>
+        </div>
+        <p class="desc">
+            Trong vùng chứa trên, tất cả các phần tử ban đầu đều có chiều rộng cơ sở. Riêng <strong>Item 2 (Div thứ 2)</strong> được thiết lập <code>flex-grow: 3</code> (trong khi các item khác là <code>flex-grow: 1</code>), do đó Item 2 nhận được phần không gian trống gấp 3 lần và phát triển rộng hơn hẳn 4 phần tử còn lại.
+        </p>
+    </div>
+</body>
+</html>
