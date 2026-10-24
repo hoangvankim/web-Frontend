@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="laptopGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <!-- Laptop Screen Outer -->
+  <rect x="50" y="30" width="300" height="190" rx="14" fill="url(#laptopGrad)" stroke="#64748b" stroke-width="3"/>
+  <!-- Laptop Screen Inner -->
+  <rect x="65" y="45" width="270" height="160" rx="6" fill="url(#screenGrad)"/>
+  <!-- Code lines on screen -->
+  <circle cx="80" cy="58" r="4" fill="#ef4444" />
+  <circle cx="92" cy="58" r="4" fill="#f59e0b" />
+  <circle cx="104" cy="58" r="4" fill="#10b981" />
+  <rect x="80" y="75" width="80" height="8" rx="4" fill="#38bdf8"/>
+  <rect x="80" y="92" width="130" height="8" rx="4" fill="#f8fafc"/>
+  <rect x="100" y="109" width="150" height="8" rx="4" fill="#facc15"/>
+  <rect x="100" y="126" width="110" height="8" rx="4" fill="#4ade80"/>
+  <rect x="80" y="143" width="90" height="8" rx="4" fill="#f8fafc"/>
+  <rect x="80" y="160" width="40" height="8" rx="4" fill="#38bdf8"/>
+  <!-- Laptop Base -->
+  <path d="M20 220 L380 220 L350 245 L50 245 Z" fill="#94a3b8"/>
+  <rect x="160" y="220" width="80" height="6" rx="3" fill="#cbd5e1"/>
+</svg>

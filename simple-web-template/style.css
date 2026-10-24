@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    background-color: #f8fafc;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 10px 40px;
+}
+
+.background {
+    background-color: #0f172a;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 140px;
+    border-radius: 50px;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 15px 22px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #38bdf8;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#search {
+    padding: 7px 12px;
+    font-size: 15px;
+    border: 2px solid #64748b;
+    border-radius: 8px;
+    outline: none;
+    color: #333;
+}
+
+#search:focus {
+    border-color: #38bdf8;
+}
+
+.btn {
+    padding: 8px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #0f172a;
+}
+
+.btn-sm {
+    padding: 7px 14px;
+    vertical-align: middle;
+}
+
+/* First Section - Web Technology */
+.firstsection {
+    background: linear-gradient(135deg, #15803d, #16a34a);
+    color: #ffffff;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+/* Second Section - C Programming */
+.secondsection {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    color: #ffffff;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.firstHalf,
+.secondHalf {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-big {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.text-small {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+/* Section with image and text */
+.section {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+/* row-reverse to flip image to left and text to right */
+.section-Left {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.paras h1 {
+    color: #0f172a;
+}
+
+.paras p {
+    color: #475569;
+}
+
+.thumbnail img {
+    width: 340px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+
+/* Footer */
+.text-footer {
+    text-align: center;
+    padding: 28px 0;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        padding: 8px 0;
+    }
+
+    .section,
+    .section-Left {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
