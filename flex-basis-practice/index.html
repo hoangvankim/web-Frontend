@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành: flex-basis trong CSS Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thực Hành: Thuộc tính flex-basis trong CSS Flexbox</h1>
+
+    <!-- Ví dụ 1: flex-basis với đơn vị px -->
+    <div class="card">
+        <h2>Ví dụ 1: flex-basis với px (200px - 100px - 150px trên trục ngang)</h2>
+        <div class="container container-px">
+            <div class="item item1">Item 1 (200px)</div>
+            <div class="item item2">Item 2 (100px)</div>
+            <div class="item item3">Item 3 (150px)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 2: flex-basis theo chiều dọc (flex-direction: column) -->
+    <div class="card">
+        <h2>Ví dụ 2: flex-basis với flex-direction: column (100px theo chiều dọc)</h2>
+        <div class="container container-column">
+            <div class="item-col">Item 1 (cao 100px)</div>
+            <div class="item-col">Item 2 (cao 100px)</div>
+            <div class="item-col">Item 3 (cao 100px)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 3: flex-basis với đơn vị phần trăm % -->
+    <div class="card">
+        <h2>Ví dụ 3: flex-basis với % (50% cho mỗi Item)</h2>
+        <div class="container container-percent">
+            <div class="item-percent">Item 1 (50%)</div>
+            <div class="item-percent">Item 2 (50%)</div>
+        </div>
+    </div>
+
+    <!-- Ví dụ 4: Kết hợp flex-basis với flex-grow -->
+    <div class="card">
+        <h2>Ví dụ 4: Kết hợp flex-basis (100px) với flex-grow (Tỷ lệ 1 : 2 : 1)</h2>
+        <div class="container container-grow">
+            <div class="item-grow grow-1">Item 1 (grow: 1)</div>
+            <div class="item-grow grow-2">Item 2 (grow: 2)</div>
+            <div class="item-grow grow-1">Item 3 (grow: 1)</div>
+        </div>
+    </div>
+</body>
+</html>

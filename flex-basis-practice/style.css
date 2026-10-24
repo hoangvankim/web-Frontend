@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px 20px;
+    color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    border: 2px dashed #bdc3c7;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+/* 1. flex-basis với px */
+.container-px .item {
+    padding: 20px 10px;
+    background-color: lightblue;
+    color: #0d47a1;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.item1 { flex-basis: 200px; }
+.item2 { flex-basis: 100px; }
+.item3 { flex-basis: 150px; }
+
+/* 2. flex-basis với column */
+.container-column {
+    flex-direction: column;
+    height: 380px;
+}
+.item-col {
+    flex-basis: 100px;
+    padding: 20px;
+    background-color: lightgreen;
+    color: #1b5e20;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. flex-basis với % */
+.container-percent .item-percent {
+    flex-basis: 50%;
+    padding: 20px;
+    background-color: lightcoral;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* 4. flex-basis kết hợp flex-grow */
+.container-grow {
+    width: 600px;
+    margin: 0 auto;
+}
+.item-grow {
+    padding: 20px 10px;
+    background-color: #b39ddb;
+    color: #311b92;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.grow-1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+.grow-2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    background-color: #7e57c2;
+    color: #ffffff;
+}
