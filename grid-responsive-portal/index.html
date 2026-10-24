@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố Cục Trang Web Responsive bằng CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-layout">
+        <!-- 1. Header -->
+        <header class="header">
+            <h1>Cổng Thông Tin Công Nghệ (Header)</h1>
+            <p>Học tập và thực hành xây dựng giao diện với CSS Grid Responsive</p>
+        </header>
+
+        <!-- 2. Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Khóa học</a></li>
+                <li><a href="#">Bài viết</a></li>
+                <li><a href="#">Dự án</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- 3. Main Content -->
+        <main class="main-content">
+            <h2>Khu Vực Nội Dung Chính (Main Content)</h2>
+            <p>Khu vực này hiển thị các bài viết và nội dung quan trọng nhất của trang web. Bố cục được điều khiển bằng thuộc tính <code>display: grid</code> kết hợp <code>grid-template-areas</code>.</p>
+            <p>Trên màn hình máy tính (Desktop), nội dung chính chiếm 3 phần độ rộng, nằm song song với thanh Sidebar ở bên phải. Khi mở trên thiết bị di động (Mobile), bố cục sẽ tự động điều chỉnh xếp dọc tuần tự để người dùng dễ theo dõi mà không bị tràn màn hình.</p>
+        </main>
+
+        <!-- 4. Sidebar -->
+        <aside class="sidebar">
+            <h3>Nội Dung Phụ (Sidebar)</h3>
+            <div class="sidebar-box">
+                <h4>Tin Nổi Bật</h4>
+                <p>Khóa học Web Frontend K1S2 khai giảng với nhiều dự án thực tế.</p>
+            </div>
+            <div class="sidebar-box">
+                <h4>Quảng Cáo / Tiện Ích</h4>
+                <p>Hotline hỗ trợ học viên 24/7: 1800 6969</p>
+            </div>
+        </aside>
+
+        <!-- 5. Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym &bull; CSS Grid Responsive Design</p>
+        </footer>
+    </div>
+</body>
+</html>

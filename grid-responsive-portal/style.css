@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Bố cục Grid chính trên Desktop */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main sidebar"
+        "footer footer";
+    min-height: 100vh;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* 1. Header */
+.header {
+    grid-area: header;
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.header h1 {
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #e3f2fd;
+}
+
+/* 2. Navigation */
+.navigation {
+    grid-area: nav;
+    background-color: #2c3e50;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.navigation ul li a:hover {
+    background-color: #e74c3c;
+}
+
+/* 3. Main Content */
+.main-content {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-content h2 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #555555;
+    text-align: justify;
+}
+
+/* 4. Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar h3 {
+    color: #2c3e50;
+    font-size: 17px;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 6px;
+}
+
+.sidebar-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #1a73e8;
+    padding: 12px;
+    border-radius: 0 4px 4px 0;
+}
+
+.sidebar-box h4 {
+    color: #0d47a1;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.sidebar-box p {
+    font-size: 13px;
+    color: #666;
+}
+
+/* 5. Footer */
+.footer {
+    grid-area: footer;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+/* Yêu cầu Responsive: Trên Mobile xếp theo chiều dọc */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "footer";
+        padding: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation ul li a {
+        border-top: 1px solid #3d566e;
+    }
+}
