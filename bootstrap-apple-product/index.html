@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 16 Pro - Thiết Kế Phong Cách Apple</title>
+    <!-- Nhúng Bootstrap 5.3.3 CSS từ CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng Font Awesome 6.5.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+            background-color: #000000;
+            color: #f5f5f7;
+            overflow-x: hidden;
+        }
+        .apple-navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            font-size: 13px;
+        }
+        .text-gradient {
+            background: linear-gradient(180deg, #ffffff 0%, #86868b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .product-hero-img {
+            max-width: 680px;
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        .product-hero-img:hover {
+            transform: scale(1.02);
+        }
+        .bento-card {
+            background: #161617;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Apple Minimalist Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark apple-navbar sticky-top border-bottom border-dark">
+        <div class="container justify-content-between">
+            <a class="navbar-brand fs-4 text-white" href="#">
+                <i class="fab fa-apple"></i>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#appleNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="appleNav">
+                <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">Mac</a></li>
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">iPad</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold active" href="#">iPhone</a></li>
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">Watch</a></li>
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">AirPods</a></li>
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">Giải Trí</a></li>
+                    <li class="nav-item"><a class="nav-link text-light opacity-75" href="#">Hỗ Trợ</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex gap-3 text-light opacity-75 fs-6">
+                <a href="#" class="text-light"><i class="fas fa-search"></i></a>
+                <a href="#" class="text-light"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Sub-Navbar iPhone 16 Pro -->
+    <div class="bg-black py-2 border-bottom border-dark sticky-top" style="top: 55px; z-index: 1020;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h5 class="mb-0 fw-bold fs-6">iPhone 16 Pro</h5>
+            <div class="d-flex align-items-center gap-3">
+                <span class="d-none d-md-inline text-secondary small">Từ 28.999.000đ hoặc 1.180.000đ/tháng</span>
+                <a href="#buy" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold">Mua ngay</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Hero Section: iPhone 16 Pro Flagship -->
+    <section class="text-center pt-5 pb-5">
+        <div class="container pt-3">
+            <p class="text-warning fw-bold text-uppercase mb-2" style="letter-spacing: 2px;">iPhone 16 Pro</p>
+            <h1 class="display-2 fw-bold text-gradient mb-3">Titanium. Đột Phá. Đỉnh Cao.</h1>
+            <p class="lead text-secondary col-lg-7 mx-auto mb-4 fs-4">
+                Thiết kế titan hoàn thiện mới. Chip A18 Pro dẫn đầu thị trường. Camera Control hoàn toàn mới.
+            </p>
+            <div class="d-flex justify-content-center gap-3 mb-5">
+                <a href="#buy" class="btn btn-primary btn-lg rounded-pill px-4 fw-semibold shadow">Mua</a>
+                <a href="#specs" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-semibold">Tìm hiểu thêm</a>
+            </div>
+            <!-- Product Showcase Image -->
+            <div class="d-flex justify-content-center">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=900&auto=format&fit=crop&q=80" 
+                     alt="iPhone 16 Pro Titanium" 
+                     class="product-hero-img rounded-5 shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Key Highlights Bento Grid -->
+    <section id="specs" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white mb-2">Khám Phá Các Tính Năng Đột Phá</h2>
+                <p class="text-secondary">Sức mạnh công nghệ tinh hoa gói gọn trong từng chi tiết.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Bento Item 1: Titanium & Display -->
+                <div class="col-md-7">
+                    <div class="bento-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <span class="text-warning fw-semibold"><i class="fas fa-shield-alt me-2"></i>Titanium Hàng Không Vũ Trụ</span>
+                            <h3 class="display-6 fw-bold mt-2 text-white">Viền mỏng nhất trên mọi dòng iPhone.</h3>
+                            <p class="text-secondary mt-3">
+                                Khung titan cấp 5 bền nhẹ khác biệt với lớp hoàn thiện tinh xảo bằng phương pháp bắn hạt mịn mới nhất.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end mt-4 pt-4 border-top border-dark">
+                            <div>
+                                <span class="fs-1 fw-bold text-white">6.3"</span>
+                                <p class="text-secondary small mb-0">iPhone 16 Pro</p>
+                            </div>
+                            <div>
+                                <span class="fs-1 fw-bold text-white">6.9"</span>
+                                <p class="text-secondary small mb-0">iPhone 16 Pro Max</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="fs-4 text-info fw-bold">Super Retina XDR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Item 2: Chip A18 Pro -->
+                <div class="col-md-5">
+                    <div class="bento-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between text-center">
+                        <div class="my-auto py-3">
+                            <i class="fas fa-microchip text-primary display-3 mb-3"></i>
+                            <h3 class="fw-bold text-white">A18 Pro Chip</h3>
+                            <p class="text-secondary">
+                                Bộ xử lý nhanh chưa từng thấy với Neural Engine 16 lõi hỗ trợ các tính năng Apple Intelligence mạnh mẽ.
+                            </p>
+                        </div>
+                        <div class="bg-black py-3 rounded-pill text-info fw-semibold">
+                            GPU 6 lõi đẳng cấp chuyên nghiệp
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Item 3: Camera System -->
+                <div class="col-md-4">
+                    <div class="bento-card p-4 text-center h-100">
+                        <i class="fas fa-camera-retro text-success display-4 mb-3"></i>
+                        <h4 class="fw-bold text-white mb-2">48MP Fusion Camera</h4>
+                        <p class="text-secondary small">Cảm biến quad-pixel thế hệ thứ hai giúp quay video 4K 120 fps chuẩn Dolby Vision chân thực.</p>
+                    </div>
+                </div>
+
+                <!-- Bento Item 4: Camera Control -->
+                <div class="col-md-4">
+                    <div class="bento-card p-4 text-center h-100">
+                        <i class="fas fa-sliders-h text-warning display-4 mb-3"></i>
+                        <h4 class="fw-bold text-white mb-2">Điều Khiển Camera</h4>
+                        <p class="text-secondary small">Thao tác trượt ngón tay mượt mà để lấy nét, zoom và chuyển đổi phong cách chụp chỉ trong tích tắc.</p>
+                    </div>
+                </div>
+
+                <!-- Bento Item 5: Pin & Sạc -->
+                <div class="col-md-4">
+                    <div class="bento-card p-4 text-center h-100">
+                        <i class="fas fa-battery-full text-danger display-4 mb-3"></i>
+                        <h4 class="fw-bold text-white mb-2">Thời Lượng Pin Đỉnh Cao</h4>
+                        <p class="text-secondary small">Xem video liên tục lên đến 33 giờ trên Pro Max. Sạc nhanh không dây MagSafe công suất 25W.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Section So Sánh (iPhone 16 Pro vs iPhone 16) -->
+    <section id="buy" class="py-5 bg-dark">
+        <div class="container py-4">
+            <h2 class="display-6 fw-bold text-center text-white mb-5">Chọn chiếc iPhone phù hợp cho bạn</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Model 1: Pro -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="card bg-black border border-secondary p-4 rounded-4 text-center h-100">
+                        <span class="badge bg-primary align-self-center px-3 py-2 rounded-pill mb-3">Mới Ra Mắt</span>
+                        <h3 class="fw-bold text-white">iPhone 16 Pro</h3>
+                        <p class="text-secondary mb-3">Chiếc iPhone đỉnh cao nhất</p>
+                        <h4 class="fw-bold text-warning mb-4">Từ 28.999.000đ</h4>
+                        <div class="d-grid gap-2 mb-4">
+                            <button class="btn btn-primary rounded-pill py-2 fw-semibold">Mua Ngay</button>
+                            <button class="btn btn-outline-secondary rounded-pill py-2 text-white">Tìm hiểu thêm</button>
+                        </div>
+                        <hr class="border-secondary">
+                        <ul class="list-unstyled text-secondary small text-start ps-3 line-height-lg">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Màn hình 6.3" hoặc 6.9" ProMotion 120Hz</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Khung vỏ Titanium Grade 5 siêu bền</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Chip A18 Pro tiến trình 3nm tiên tiến</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Hệ thống 3 camera Pro Zoom quang học 5x</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Model 2: Tiêu chuẩn -->
+                <div class="col-lg-5 col-md-6">
+                    <div class="card bg-black border border-secondary p-4 rounded-4 text-center h-100">
+                        <span class="badge bg-secondary align-self-center px-3 py-2 rounded-pill mb-3">Phổ Thông</span>
+                        <h3 class="fw-bold text-white">iPhone 16</h3>
+                        <p class="text-secondary mb-3">Đầy đủ sức mạnh công nghệ</p>
+                        <h4 class="fw-bold text-light mb-4">Từ 22.999.000đ</h4>
+                        <div class="d-grid gap-2 mb-4">
+                            <button class="btn btn-light rounded-pill py-2 fw-semibold">Mua Ngay</button>
+                            <button class="btn btn-outline-secondary rounded-pill py-2 text-white">Tìm hiểu thêm</button>
+                        </div>
+                        <hr class="border-secondary">
+                        <ul class="list-unstyled text-secondary small text-start ps-3 line-height-lg">
+                            <li class="mb-2"><i class="fas fa-check text-light me-2"></i> Màn hình 6.1" hoặc 6.7" Super Retina XDR</li>
+                            <li class="mb-2"><i class="fas fa-check text-light me-2"></i> Mặt lưng kính pha màu & nhôm chuẩn hàng không</li>
+                            <li class="mb-2"><i class="fas fa-check text-light me-2"></i> Chip A18 tối ưu hóa năng lượng</li>
+                            <li class="mb-2"><i class="fas fa-check text-light me-2"></i> Hệ thống 2 camera Fusion 48MP sắc nét</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Footer Phong Cách Apple -->
+    <footer class="bg-black text-secondary py-5 border-top border-dark small">
+        <div class="container">
+            <p class="mb-3 text-muted">
+                * Giá đã bao gồm thuế GTGT. Chương trình trả góp 0% áp dụng cho các chủ thẻ ngân hàng liên kết. Apple Intelligence sẽ khả dụng trong bản cập nhật iOS sắp tới.
+            </p>
+            <hr class="border-dark my-4">
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0">Bản quyền &copy; 2026 Apple Inc. Mọi quyền được bảo lưu.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-secondary text-decoration-none">Chính sách bảo mật</a>
+                    <a href="#" class="text-secondary text-decoration-none">Điều khoản sử dụng</a>
+                    <a href="#" class="text-secondary text-decoration-none">Bán hàng & hoàn tiền</a>
+                </div>
+            </div>
+            <p class="mt-3 mb-0 text-muted">Dự án mô phỏng trang sản phẩm Apple | Học viên thực hiện: Hoàng Văn Kim</p>
+        </div>
+    </footer>
+
+    <!-- Nhúng Bootstrap 5.3.3 Bundle JS từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
