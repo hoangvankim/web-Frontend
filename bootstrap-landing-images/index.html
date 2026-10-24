@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Bootstrap & Hình Ảnh</title>
+    <!-- Nhúng Bootstrap 5.3.0 CSS từ CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #334155;
+            background-color: #ffffff;
+        }
+        /* Tự xây dựng Hero Section thay thế Jumbotron của Bootstrap cũ */
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%);
+            color: #ffffff;
+            padding: 90px 0 80px 0;
+        }
+        .feature-icon-wrapper {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin-bottom: 18px;
+            background: #e0f2fe;
+            color: #0284c7;
+        }
+        .feature-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            border-color: #38bdf8;
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-3" href="#">INNOVA<span>TECH</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Giới Thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Tính Năng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cta">Đăng Ký</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Banner / Hero Section (Thay thế Jumbotron của Bootstrap 3/4) -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="badge bg-info text-dark px-3 py-2 fs-6 mb-3 rounded-pill fw-semibold">Giải Pháp Công Nghệ 2026</span>
+                    <h1 class="display-4 fw-bold mb-3">Kiến Tạo Tương Lai Số Cùng InnovaTech</h1>
+                    <p class="lead mb-4 text-light opacity-90">
+                        Nền tảng giải pháp đám mây và tối ưu hóa hệ thống thông minh, giúp hàng triệu doanh nghiệp bứt phá doanh thu và nâng tầm thương hiệu.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#cta" class="btn btn-warning btn-lg fw-bold px-4 shadow">Đăng Ký Ngay</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4">Tìm Hiểu Thêm</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format&fit=crop&q=80" 
+                         alt="Banner Hero Section" 
+                         class="img-fluid rounded-4 shadow-lg border border-3 border-light">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Giới Thiệu (About / Product Overview) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=80" 
+                         alt="Đội ngũ giới thiệu sản phẩm" 
+                         class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <span class="text-primary fw-bold text-uppercase">Về Chúng Tôi</span>
+                    <h2 class="display-6 fw-bold text-dark mt-2 mb-3">Đơn Vị Tiên Phong Trong Lĩnh Vực Chuyển Đổi Số</h2>
+                    <p class="text-secondary mb-3">
+                        Với hơn 10 năm kinh nghiệm phát triển các sản phẩm công nghệ cao, chúng tôi thấu hiểu những thách thức mà doanh nghiệp đối mặt trong kỷ nguyên số hóa.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        Tất cả các dịch vụ đều được xây dựng dựa trên kiến trúc hiện đại, đảm bảo tốc độ phản hồi siêu nhanh, độ tin cậy đạt 99.99% và dễ dàng mở rộng quy mô.
+                    </p>
+                    <ul class="list-unstyled text-dark mb-4">
+                        <li class="mb-2">✅ Bảo mật dữ liệu đa lớp chuẩn quốc tế</li>
+                        <li class="mb-2">✅ Giao diện người dùng tối ưu hóa đa thiết bị (Responsive)</li>
+                        <li class="mb-2">✅ Hỗ trợ và tư vấn triển khai chuyên sâu 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Danh Sách Tính Năng (4 Cột) -->
+    <section id="features" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="text-primary fw-bold text-uppercase">Tính Năng Vượt Trội</span>
+                <h2 class="display-6 fw-bold mt-2">Tại Sao Hơn 10,000+ Khách Hàng Chọn Chúng Tôi?</h2>
+                <p class="text-muted col-lg-7 mx-auto">
+                    Trải nghiệm bộ công cụ toàn diện được tinh chỉnh nhằm nâng cao tối đa hiệu suất làm việc.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tính năng 1 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="feature-card bg-white">
+                        <div class="feature-icon-wrapper">⚡</div>
+                        <h4 class="h5 fw-bold text-dark mb-2">Tốc Độ Tối Ưu</h4>
+                        <p class="text-muted small mb-0">Hệ thống xử lý siêu tốc với CDN toàn cầu giúp tải trang trong nháy mắt.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 2 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="feature-card bg-white">
+                        <div class="feature-icon-wrapper">🛡️</div>
+                        <h4 class="h5 fw-bold text-dark mb-2">Bảo Mật Cao Cấp</h4>
+                        <p class="text-muted small mb-0">Mã hóa chuẩn SSL 256-bit bảo vệ an toàn mọi giao dịch và dữ liệu cá nhân.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 3 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="feature-card bg-white">
+                        <div class="feature-icon-wrapper">📱</div>
+                        <h4 class="h5 fw-bold text-dark mb-2">Responsive Chuẩn</h4>
+                        <p class="text-muted small mb-0">Tương thích hoàn hảo trên màn hình Desktop, Laptop, Máy tính bảng và Mobile.</p>
+                    </div>
+                </div>
+
+                <!-- Tính năng 4 -->
+                <div class="col-12 col-sm-6 col-lg-3 text-center">
+                    <div class="feature-card bg-white">
+                        <div class="feature-icon-wrapper">💬</div>
+                        <h4 class="h5 fw-bold text-dark mb-2">Hỗ Trợ 24/7</h4>
+                        <p class="text-muted small mb-0">Đội ngũ kỹ thuật viên nhiệt huyết sẵn sàng đồng hành cùng bạn mọi lúc mọi nơi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Nút Kêu Gọi Hành Động (CTA Section) -->
+    <section id="cta" class="cta-section py-5 text-center">
+        <div class="container py-4">
+            <h2 class="display-5 fw-bold mb-3">Sẵn Sàng Bắt Đầu Hành Trình Ngay Hôm Nay?</h2>
+            <p class="lead text-light opacity-75 col-lg-8 mx-auto mb-4">
+                Đăng ký tài khoản dùng thử 30 ngày hoàn toàn miễn phí. Không cần thẻ tín dụng, hủy bất kỳ lúc nào!
+            </p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-primary btn-lg fw-bold px-5 py-3 shadow">Đăng Ký Ngay</a>
+                <a href="#about" class="btn btn-outline-light btn-lg fw-semibold px-4 py-3">Xem Thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 InnovaTech. All rights reserved.</p>
+            <p class="text-secondary small mb-0">Học viên thực hiện: Hoàng Văn Kim | Landing Page Bootstrap & Hình Ảnh</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
