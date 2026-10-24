@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích & Tái Hiện Bố Cục Trang Web Thực Tế</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. Header: Chứa tiêu đề trang & Logo thương hiệu -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Tech<span>Portal</span></h1>
+            </div>
+            <div class="header-search">
+                <input type="text" placeholder="Tìm kiếm bài viết, tài liệu...">
+                <button type="button">Tìm</button>
+            </div>
+            <div class="header-actions">
+                <button class="btn-login">Đăng nhập</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Navigation Menu: Có ít nhất 4 mục điều hướng -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Trang Chủ</a></li>
+                <li><a href="#articles">Tin Tức Công Nghệ</a></li>
+                <li><a href="#tutorials">Khóa Học & Hướng Dẫn</a></li>
+                <li><a href="#community">Diễn Đàn</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 3. Content Section: Gồm bài viết chính, hình ảnh và sidebar phụ -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Cột nội dung bài viết chính (70%) -->
+            <section class="articles-area" id="articles">
+                <h2>Bài Viết Tiêu Điểm</h2>
+
+                <!-- Bài viết 1 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=700&auto=format&fit=crop&q=80" alt="Hình ảnh lập trình viên">
+                    <div class="card-body">
+                        <span class="tag">Frontend</span>
+                        <h3>Xây dựng kiến trúc giao diện Web hiện đại với HTML5 & CSS3</h3>
+                        <p>
+                            Bố cục trang web hiệu quả đòi hỏi sự kết hợp hài hòa giữa các thành phần ngữ nghĩa semantic và tư duy phân cấp thông tin trực quan. Việc phân định rõ ràng giữa Header, Navbar, Content và Footer giúp người dùng dễ dàng định vị nội dung cần tìm.
+                        </p>
+                        <a href="#" class="read-more">Đọc tiếp &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Bài viết 2 -->
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=700&auto=format&fit=crop&q=80" alt="Hình ảnh công nghệ bảo mật">
+                    <div class="card-body">
+                        <span class="tag">Công Nghệ</span>
+                        <h3>Xu hướng Trí tuệ Nhân tạo và An toàn Thông tin năm 2026</h3>
+                        <p>
+                            Khám phá những bước tiến vượt bậc của trí tuệ nhân tạo thế hệ mới và cách các kỹ sư phần mềm bảo vệ dữ liệu người dùng trên môi trường đám mây đa nền tảng.
+                        </p>
+                        <a href="#" class="read-more">Đọc tiếp &rarr;</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Cột Sidebar phụ (30%) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Chuyên Mục Nổi Bật</h3>
+                    <ul class="category-list">
+                        <li><a href="#">• Lập trình Web Frontend</a></li>
+                        <li><a href="#">• Lập trình Backend & Database</a></li>
+                        <li><a href="#">• Trí tuệ Nhân tạo & Machine Learning</a></li>
+                        <li><a href="#">• UI/UX Design & Trải nghiệm người dùng</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Thông Tin Trang</h3>
+                    <p class="widget-desc">
+                        Trang web được thiết kế nhằm mô phỏng bố cục chuẩn của các cổng thông tin công nghệ hàng đầu, tập trung vào cấu trúc rõ ràng, tính thẩm mỹ và khả năng tương thích cao.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- 4. Footer: Chứa thông tin bản quyền và liên kết phụ -->
+    <footer class="footer" id="contact">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>TechPortal</h4>
+                <p>Nền tảng chia sẻ kiến thức lập trình và tin tức công nghệ dành cho cộng đồng lập trình viên trẻ.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên Kết Nhanh</h4>
+                <ul>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Liên hệ quảng cáo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Bản Quyền</h4>
+                <p>&copy; 2026 TechPortal. All rights reserved.</p>
+                <p>Học viên thực hiện: <strong>Hoàng Văn Kim</strong></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
