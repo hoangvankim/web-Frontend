@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container div {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Ví dụ 1: 2 cột, grid-gap: 20px (cả hàng và cột đều 20px) */
+.grid-example1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-example1 div {
+    background-color: lightblue;
+    color: #0d47a1;
+}
+
+/* Ví dụ 2: 3 cột, grid-gap: 30px 10px (hàng 30px, cột 10px) */
+.grid-example2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+}
+
+.grid-example2 div {
+    background-color: lightgreen;
+    color: #1b5e20;
+}
