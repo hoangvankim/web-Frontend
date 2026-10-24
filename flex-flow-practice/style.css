@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+.page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.intro {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.example-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.example-card h2 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+/* Ví dụ 1: row nowrap */
+.container-1 {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.container-1 > div {
+    background-color: #007bff;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25);
+}
+
+/* Ví dụ 2: row-reverse nowrap */
+.container-2 {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    background-color: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.container-2 > div {
+    background-color: #28a745;
+    color: #ffffff;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(40, 167, 69, 0.25);
+}
+
+code {
+    background-color: #e2e8f0;
+    color: #0f172a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+}
