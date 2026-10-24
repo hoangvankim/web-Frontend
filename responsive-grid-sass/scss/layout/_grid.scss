@@ -1,0 +1,27 @@
+// layout/_grid.scss
+.gridcontainer {
+    width: 100%;
+}
+
+.gridwrapper {
+    overflow: auto;
+    position: relative;
+    height: 250px;
+    @include clearfix;
+}
+
+.gridcontent {
+    width: calc(100% / #{$columns});
+    margin: 0;
+    border-right: 1px solid $border-color;
+    height: 100%;
+    float: left;
+    background-color: $bg-light;
+}
+
+// Vòng lặp SASS @for tự động sinh 12 cột Responsive Grid
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: calc(100% / #{$columns} * #{$i});
+    }
+}

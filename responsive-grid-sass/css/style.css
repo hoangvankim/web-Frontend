@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fafafa;
+  color: #333333;
+}
+
+.instruction-text {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.gridcontainer {
+  width: 100%;
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+.gridwrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gridcontent {
+  width: 8.3333333333%;
+  margin: 0;
+  border-right: 1px solid #808080;
+  height: 100%;
+  float: left;
+  background-color: #f1f1f1;
+}
+
+.col-1 { width: 8.3333333333%; }
+.col-2 { width: 16.6666666667%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.3333333333%; }
+.col-5 { width: 41.6666666667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.3333333333%; }
+.col-8 { width: 66.6666666667%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.3333333333%; }
+.col-11 { width: 91.6666666667%; }
+.col-12 { width: 100%; }
+
+.demo-overlay {
+  position: absolute;
+  opacity: 0.95;
+  width: auto;
+  left: 8px;
+  right: 10px;
+  z-index: 2;
+}
+
+.demo-header {
+  height: 90px;
+}
+.demo-header .header-box {
+  background-color: #9933cc;
+  border-right-color: transparent;
+  height: 100%;
+}
+
+.demo-body {
+  height: 230px;
+}
+.demo-body .sidebar {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 15px;
+}
+.demo-body .sidebar .menu-bar {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.demo-body .blank-col {
+  background-color: #ffffff;
+  border: none;
+}
+.demo-body .main-article {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 15px;
+}
+.demo-body .main-article .article-content {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 92%;
+  border-radius: 2px;
+}
+
+.demo-footer {
+  height: 50px;
+}
+.demo-footer .footer-box {
+  background-color: #0099cc;
+  border-right-color: transparent;
+  height: 100%;
+}
+
+.guideline-grid {
+  opacity: 0.15;
+}
+.guideline-grid .gridwrapper {
+  height: 370px;
+}
+.guideline-grid .gridcontent {
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+}
+.guideline-grid .gridcontent:first-child {
+  border-left: 1px solid #000000;
+}

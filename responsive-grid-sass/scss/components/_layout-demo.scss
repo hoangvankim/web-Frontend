@@ -1,0 +1,84 @@
+// components/_layout-demo.scss
+.demo-overlay {
+    position: absolute;
+    opacity: 0.95;
+    width: auto;
+    left: 8px;
+    right: 10px;
+    z-index: 2;
+}
+
+.demo-header {
+    height: 90px;
+
+    .header-box {
+        background-color: $primary-purple;
+        border-right-color: transparent;
+        height: 100%;
+    }
+}
+
+.demo-body {
+    height: 230px;
+
+    .sidebar {
+        background-color: $white;
+        border: none;
+        padding-top: 15px;
+
+        .menu-bar {
+            background-color: $accent-blue;
+            border: none;
+            width: 100%;
+            height: 15%;
+            margin-bottom: 10px;
+            border-radius: 2px;
+        }
+    }
+
+    .blank-col {
+        background-color: $white;
+        border: none;
+    }
+
+    .main-article {
+        background-color: $white;
+        border: none;
+        padding-top: 15px;
+
+        .article-content {
+            background-color: $accent-blue;
+            border: none;
+            width: 100%;
+            height: 92%;
+            border-radius: 2px;
+        }
+    }
+}
+
+.demo-footer {
+    height: 50px;
+
+    .footer-box {
+        background-color: $footer-blue;
+        border-right-color: transparent;
+        height: 100%;
+    }
+}
+
+.guideline-grid {
+    opacity: 0.15;
+
+    .gridwrapper {
+        height: 370px;
+    }
+
+    .gridcontent {
+        background-color: $white;
+        border-right: 1px solid #000000;
+
+        &:first-child {
+            border-left: 1px solid #000000;
+        }
+    }
+}

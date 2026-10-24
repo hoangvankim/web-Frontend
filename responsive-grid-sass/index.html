@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Tái Cấu Trúc SASS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Lớp bố cục giao diện mô phỏng (Header, Sidebar Menu, Main Content, Footer) -->
+    <div class="demo-overlay">
+        <div class="gridcontainer">
+            <!-- Header (Màu tím) -->
+            <div class="gridwrapper demo-header">
+                <div class="gridcontent col-12 header-box"></div>
+            </div>
+
+            <!-- Thân trang (Sidebar 3 cột + Main Content) -->
+            <div class="gridwrapper demo-body">
+                <div class="gridcontent col-3 sidebar">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent blank-col"></div>
+                <div class="gridcontent col-3 main-article">
+                    <div class="article-content"></div>
+                </div>
+            </div>
+
+            <!-- Footer (Màu xanh dương) -->
+            <div class="gridwrapper demo-footer">
+                <div class="gridcontent col-12 footer-box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lưới định hướng 12 cột (Guidelines Grid) làm nền phía sau -->
+    <div class="gridcontainer guideline-grid">
+        <div class="gridwrapper">
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+            <div class="gridcontent"></div>
+        </div>
+    </div>
+
+    <p class="instruction-text">
+        Resize the browser window to see that this grid will respond to the resizing, and always use 100% of the available space. (Mã nguồn đã được tái cấu trúc từ CSS sang SASS với vòng lặp <code>@for</code>, Mixins và Partials).
+    </p>
+</body>
+</html>
