@@ -1,0 +1,54 @@
+// components/_statistics.scss
+.statistics-section {
+    background-color: $dark-color;
+    color: $white;
+    padding: 70px 0;
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        text-align: center;
+
+        @include respond-to($breakpoint-md) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @include respond-to(480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .stat-card {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: $card-radius;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform $transition-speed;
+
+        &:hover {
+            transform: translateY(-5px);
+            border-color: $secondary-color;
+        }
+
+        .stat-icon {
+            font-size: 32px;
+            color: $secondary-color;
+            margin-bottom: 12px;
+        }
+
+        .stat-number {
+            font-size: 38px;
+            font-weight: 800;
+            color: $white;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 15px;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+    }
+}

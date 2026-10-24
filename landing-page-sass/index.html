@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Tái Cấu Trúc Toàn Bộ Bằng SASS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 1. Navigation Menu -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">TECH<span>NOVA</span></a>
+            <ul class="nav-menu">
+                <li><a href="#" class="active">Trang Chủ</a></li>
+                <li><a href="#products">Sản Phẩm</a></li>
+                <li><a href="#stats">Số Liệu</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+            <a href="#products" class="nav-cta">Khám Phá</a>
+        </div>
+    </nav>
+
+    <!-- 2. Header Hero Section -->
+    <header class="header-hero">
+        <div class="container hero-content">
+            <span class="badge-pill">🚀 Đột Phá Công Nghệ 2026</span>
+            <h1>Giải Pháp Nền Tảng Số Toàn Diện Cho Doanh Nghiệp</h1>
+            <p>
+                Tối ưu hóa quy trình làm việc, gia tăng doanh số và mở rộng tầm ảnh hưởng thương hiệu với hệ sinh thái công nghệ thế hệ mới được xây dựng bằng SASS chuẩn mực.
+            </p>
+            <div class="hero-actions">
+                <a href="#products" class="btn-primary">Xem Sản Phẩm</a>
+                <a href="#stats" class="btn-outline">Xem Số Liệu</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Sản Phẩm Nổi Bật (Featured Products Section) -->
+    <section class="featured-products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <span>Danh Mục Bán Chạy</span>
+                <h2>Sản Phẩm & Dịch Vụ Nổi Bật</h2>
+            </div>
+
+            <div class="product-grid">
+                <!-- Sản phẩm 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=80" alt="Website Analytics" class="product-img">
+                    <div class="product-details">
+                        <span class="category-tag">Phần Mềm</span>
+                        <h3>Dashboard Analytics Pro</h3>
+                        <p>Hệ thống đo lường và phân tích dữ liệu người dùng thời gian thực, trực quan hóa biểu đồ thông minh.</p>
+                        <div class="product-footer">
+                            <span class="price">4.990.000đ</span>
+                            <button class="btn-buy">Mua Ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80" alt="Cloud Solution" class="product-img">
+                    <div class="product-details">
+                        <span class="category-tag">Đám Mây</span>
+                        <h3>Cloud Storage Enterprise</h3>
+                        <p>Lưu trữ dữ liệu đám mây tốc độ cao, mã hóa hai lớp đạt chuẩn bảo mật quốc tế ISO 27001.</p>
+                        <div class="product-footer">
+                            <span class="price">2.490.000đ</span>
+                            <button class="btn-buy">Mua Ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sản phẩm 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=600&auto=format&fit=crop&q=80" alt="AI Marketing" class="product-img">
+                    <div class="product-details">
+                        <span class="category-tag">Trí Tuệ Nhân Tạo</span>
+                        <h3>AI Marketing Automation</h3>
+                        <p>Tự động hóa chiến dịch tiếp thị số đa kênh, tối ưu chi phí quảng cáo và tiếp cận đúng khách hàng mục tiêu.</p>
+                        <div class="product-footer">
+                            <span class="price">6.800.000đ</span>
+                            <button class="btn-buy">Mua Ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Số Liệu Thống Kê (Statistics Section) -->
+    <section class="statistics-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Khách Hàng Tin Dùng</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">99.8%</div>
+                    <div class="stat-label">Tỷ Lệ Hài Lòng</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-label">Giải Thưởng Công Nghệ</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Hỗ Trợ Chuyên Nghiệp</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Cột 1 -->
+                <div class="footer-col">
+                    <h4>Về TECHNOVA</h4>
+                    <p>
+                        TECHNOVA là đơn vị tiên phong cung cấp các giải pháp công nghệ cao và kiến trúc giao diện Web hiện đại. Toàn bộ mã nguồn Landing Page này được tối ưu hóa bằng SASS Partials.
+                    </p>
+                </div>
+
+                <!-- Cột 2 -->
+                <div class="footer-col">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#products">Sản Phẩm Nổi Bật</a></li>
+                        <li><a href="#stats">Số Liệu Thống Kê</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3 -->
+                <div class="footer-col">
+                    <h4>Hỗ Trợ</h4>
+                    <ul>
+                        <li><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li><a href="#">Tài Liệu Hướng Dẫn</a></li>
+                        <li><a href="#">Cộng Đồng Lập Trình</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4 -->
+                <div class="footer-col">
+                    <h4>Đăng Ký Nhận Tin</h4>
+                    <p>Nhận các ưu đãi đặc biệt và tin tức công nghệ mới nhất mỗi tuần.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn..." required>
+                        <button type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 TECHNOVA Inc. All rights reserved.</p>
+                <p>Học viên thực hiện: <span class="author-tag">Hoàng Văn Kim</span> | Dự án SASS Landing Page</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
