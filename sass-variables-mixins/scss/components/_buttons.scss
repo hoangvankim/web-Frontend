@@ -1,0 +1,8 @@
+// components/_buttons.scss
+.button {
+    @include button-style($primary-color);
+}
+
+.button-secondary {
+    @include button-style(#0284c7);
+}

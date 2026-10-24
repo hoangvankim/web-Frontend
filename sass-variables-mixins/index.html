@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành: SASS Variables & Mixins</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Tiêu Đề Lớn (Heading 1 - $font-large: 32px)</h1>
+        <h2>Tiêu Đề Phụ (Heading 2 - $font-medium: 28px)</h2>
+        <p style="margin-bottom: 25px; color: #64748b;">
+            Minh họa việc tối ưu hóa CSS bằng SASS Variables và Mixins giúp giao diện đồng bộ, dễ dàng cập nhật bảng màu và tái sử dụng hiệu ứng.
+        </p>
+
+        <!-- Thẻ Card 1 -->
+        <div class="card">
+            <h2>Thẻ Thông Tin 1 (@include box-style)</h2>
+            <p>
+                Thẻ này được áp dụng mixin <code>@include box-style</code> để tự động nhận nền trắng, padding 20px, bo góc 10px và bóng đổ <code>$box-shadow-default</code>.
+            </p>
+            <button class="button">Nút Chính ($primary-color)</button>
+        </div>
+
+        <!-- Thẻ Card 2 -->
+        <div class="card">
+            <h2>Thẻ Thông Tin 2 (Tái Sử Dụng Nhanh Chóng)</h2>
+            <p>
+                Nút thứ hai áp dụng cùng mixin <code>button-style</code> nhưng truyền tham số màu nền tùy chọn (#0284c7), thể hiện khả năng tái sử dụng linh hoạt của mixin trong SCSS.
+            </p>
+            <button class="button-secondary">Nút Phụ (Tham Số Màu Xanh)</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+// abstracts/_mixins.scss
+@mixin button-style($bg-color) {
+    background: $bg-color;
+    color: #ffffff;
+    padding: $padding-standard;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background: darken($bg-color, 12%);
+        transform: translateY(-2px);
+    }
+}
+
+@mixin box-style {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $box-shadow-default;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+}

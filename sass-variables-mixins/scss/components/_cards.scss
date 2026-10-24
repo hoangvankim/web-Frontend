@@ -1,0 +1,9 @@
+// components/_cards.scss
+.card {
+    @include box-style;
+
+    p {
+        color: lighten($text-color, 20%);
+        margin-bottom: 15px;
+    }
+}
