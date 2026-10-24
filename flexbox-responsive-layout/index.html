@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Header - Bố Cục Trang Web Responsive</h1>
+            <p>Xây dựng giao diện hiện đại với CSS Flexbox</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content">
+                <h2>Nội Dung Chính (Main Content)</h2>
+                <p>
+                    Khu vực nội dung chính chiếm tỷ lệ <code>flex: 3</code> trên máy tính để bàn (Desktop). Bố cục sử dụng Flexbox giúp tự động thích ứng với kích thước màn hình mà không cần sử dụng float hay position phức tạp.
+                </p>
+                <article class="article-card">
+                    <h3>Ưu điểm của Flexbox trong thiết kế Web</h3>
+                    <p>
+                        CSS Flexbox cung cấp cơ chế mạnh mẽ để căn chỉnh khoảng cách, hướng phân phối và thứ tự hiển thị của các phần tử con bên trong container cha. Khi kết hợp với Media Queries, trang web sẽ co giãn mượt mà giữa các kích thước màn hình.
+                    </p>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <div class="widget">
+                    <h3>Chuyên mục nổi bật</h3>
+                    <ul>
+                        <li><a href="#">Lập trình Frontend</a></li>
+                        <li><a href="#">CSS Flexbox & Grid</a></li>
+                        <li><a href="#">Responsive Web Design</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Thông tin phụ</h3>
+                    <p>Sidebar chiếm tỷ lệ <code>flex: 1</code> trên Desktop và tự động chuyển xuống dưới nội dung chính trên thiết bị di động (&le; 768px).</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Hoàng Văn Kim - Bố cục Flexbox Responsive hoàn chỉnh</p>
+        </footer>
+    </div>
+</body>
+</html>
