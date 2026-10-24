@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Hành: grid-row-gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thực Hành: Thuộc tính grid-row-gap trong CSS Grid</h1>
+
+    <!-- 1. Giá trị length (px) -->
+    <div class="card">
+        <h2>1. Giá trị length (grid-row-gap: 20px)</h2>
+        <div class="grid-container grid-length">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+
+    <!-- 2. Giá trị percentage (%) -->
+    <div class="card">
+        <h2>2. Giá trị phần trăm (grid-row-gap: 5% - Chiều cao 350px)</h2>
+        <div class="grid-container grid-percent">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+
+    <!-- 3. Giá trị toàn cục (global values) -->
+    <div class="card">
+        <h2>3. Giá trị toàn cục (grid-row-gap: initial / 0px mặc định)</h2>
+        <div class="grid-container grid-initial">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fa;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 800px;
+    margin: 0 auto 25px auto;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #34495e;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container div {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* 1. Giá trị length: 20px */
+.grid-length {
+    grid-row-gap: 20px;
+    column-gap: 15px;
+}
+.grid-length div {
+    background-color: lightblue;
+    color: #0d47a1;
+}
+
+/* 2. Giá trị percentage: 5% */
+.grid-percent {
+    grid-row-gap: 5%;
+    column-gap: 15px;
+    height: 350px;
+}
+.grid-percent div {
+    background-color: lightgreen;
+    color: #1b5e20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3. Giá trị toàn cục: initial (mặc định không có khoảng cách hàng) */
+.grid-initial {
+    grid-row-gap: initial;
+    column-gap: 15px;
+}
+.grid-initial div {
+    background-color: #ffe0b2;
+    color: #e65100;
+}
