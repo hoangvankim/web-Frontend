@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #e11d48 0%, #f97316 100%);
+    --primary-color: #e11d48;
+    --secondary-color: #f97316;
+    --dark-color: #0f172a;
+    --dark-light: #1e293b;
+    --light-bg: #f8fafc;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    color: #334155;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+}
+
+/* Navbar */
+.site-navbar {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.site-navbar .navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.site-navbar .nav-link {
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 16px !important;
+    transition: color 0.3s ease;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+/* 1. Header & Book Overview */
+.hero-header {
+    background: var(--primary-gradient);
+    color: #ffffff;
+    padding: 110px 0 90px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #ffffff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+.book-tag {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.book-cover-wrap {
+    perspective: 1000px;
+}
+
+.book-cover-img {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transform: rotateY(-10deg) rotateX(5deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.book-cover-img:hover {
+    transform: rotateY(0deg) rotateX(0deg) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* Section Common Styling */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title .badge-sub {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+/* 2. Author Section */
+.author-avatar {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.author-quote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 17px;
+    color: #475569;
+}
+
+/* 3. Features Section */
+.feature-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.09);
+    border-color: #fed7aa;
+}
+
+.feature-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff1f2, #ffedd5);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* 4. Prices Section */
+.pricing-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.03);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.03) translateY(-10px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-gradient);
+    color: white;
+    padding: 4px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.price-amount {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin: 15px 0;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.price-list li {
+    padding: 8px 0;
+    font-size: 15px;
+    color: #475569;
+}
+
+/* 5. Download Section */
+.download-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    position: relative;
+}
+
+.app-btn {
+    border-radius: 10px;
+    padding: 12px 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* 6. Reader's Say Section */
+.review-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    height: 100%;
+}
+
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid var(--primary-color);
+}
+
+.star-rating {
+    color: #f59e0b;
+    margin-bottom: 12px;
+}
+
+/* 7. Footer */
+.site-footer {
+    background-color: #0b1120;
+    color: #94a3b8;
+    padding: 60px 0 25px 0;
+    border-top: 1px solid #1e293b;
+}
+
+.site-footer h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #1e293b;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+}

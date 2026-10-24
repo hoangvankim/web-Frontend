@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám Phá Tri Thức - Trang Giới Thiệu Sách Toàn Diện</title>
+    <!-- Nhúng Bootstrap 5.3.3 CSS từ CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng Font Awesome 6.5.2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold" href="#overview">
+                <i class="fas fa-book-open text-warning me-2"></i>BOOK<span>LAND</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bookNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bookNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#overview">Tổng Quan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#author">Tác Giả</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Đặc Điểm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Bảng Giá</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">Tải Xuống</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#readers-say">Độc Giả</a></li>
+                </ul>
+                <a href="#prices" class="btn btn-warning fw-bold ms-lg-3 rounded-pill px-3 py-2">Mua Sách</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Header, Book Overview Section -->
+    <header class="hero-header" id="overview">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <span class="book-tag mb-3 d-inline-block">🏆 Sách Bán Chạy Nhất Năm 2026</span>
+                    <h1 class="display-4 fw-bold mb-3">Tư Duy Kiến Tạo: Nghệ Thuật Lập Trình & Đổi Mới</h1>
+                    <p class="lead mb-4 text-light opacity-90 fs-5">
+                        Cuốn cẩm nang toàn diện khai phá năng lực tư duy kiến trúc, làm chủ công nghệ hiện đại và xây dựng sự nghiệp vững chắc trong kỷ nguyên trí tuệ nhân tạo.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+                        <a href="#prices" class="btn btn-light text-danger btn-lg fw-bold px-4 rounded-pill shadow">
+                            <i class="fas fa-shopping-cart me-2"></i>Mua Sách Ngay
+                        </a>
+                        <a href="#download" class="btn btn-outline-light btn-lg fw-semibold px-4 rounded-pill">
+                            <i class="fas fa-download me-2"></i>Đọc Thử Miễn Phí
+                        </a>
+                    </div>
+                    <div class="d-flex gap-4 justify-content-center justify-content-lg-start pt-2 text-light small">
+                        <div><i class="fas fa-check-circle text-warning me-1"></i> 520 Trang bìa cứng</div>
+                        <div><i class="fas fa-check-circle text-warning me-1"></i> Tặng kèm E-book</div>
+                        <div><i class="fas fa-check-circle text-warning me-1"></i> Miễn phí vận chuyển</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <div class="book-cover-wrap">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=80" 
+                             alt="Bìa sách Tư Duy Kiến Tạo" 
+                             class="book-cover-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Author Section -->
+    <section class="section-padding bg-light" id="author">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80" 
+                         alt="Chân dung tác giả" 
+                         class="author-avatar img-fluid">
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title mb-3">
+                        <span class="badge-sub">Gặp Gỡ Tác Giả</span>
+                        <h2>TS. Nguyễn Hoàng Nam</h2>
+                    </div>
+                    <p class="text-secondary lead fs-6 mb-3">
+                        Tiến sĩ Khoa học Máy tính tại Đại học Bách Khoa, Chuyên gia kiến trúc hệ thống với hơn 18 năm kinh nghiệm tại các tập đoàn công nghệ đa quốc gia.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Ông là tác giả của 5 đầu sách công nghệ ăn khách, diễn giả truyền cảm hứng tại nhiều diễn đàn công nghệ quốc tế và là cố vấn chiến lược đổi mới sáng tạo cho hàng chục dự án phần mềm tiên phong.
+                    </p>
+                    <div class="author-quote mb-4">
+                        "Lập trình không chỉ là viết những dòng code cho máy tính hiểu, mà là nghệ thuật biến các ý tưởng phức tạp thành giải pháp thanh lịch thay đổi cuộc sống con người."
+                    </div>
+                    <div class="row g-3 text-center">
+                        <div class="col-4">
+                            <h4 class="fw-bold text-danger mb-0">18+</h4>
+                            <small class="text-muted">Năm Kinh Nghiệm</small>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold text-danger mb-0">50,000+</h4>
+                            <small class="text-muted">Bản Sách Đã Bán</small>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold text-danger mb-0">4.9/5</h4>
+                            <small class="text-muted">Đánh Giá Độc Giả</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Features Section -->
+    <section class="section-padding" id="features">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="badge-sub">Giá Trị Cốt Lõi</span>
+                <h2>Bạn Sẽ Nhận Được Gì Từ Cuốn Sách Này?</h2>
+                <p class="text-muted col-lg-7 mx-auto mt-2">
+                    Mỗi chương sách được thiết kế khoa học, kết hợp giữa lý thuyết nền tảng vững chắc và các ví dụ thực chiến sinh động.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-brain"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Tư Duy Kiến Trúc Hệ Thống</h4>
+                        <p class="text-muted small mb-0">Hiểu rõ bản chất của các mô hình kiến trúc phần mềm, nguyên lý Clean Architecture và cách áp dụng chuẩn mực.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-code"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Thực Hành Clean Code</h4>
+                        <p class="text-muted small mb-0">Nâng cao kỹ năng viết mã nguồn mạch lạc, dễ mở rộng, tối ưu hiệu năng và thuận lợi khi làm việc nhóm lớn.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-robot"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Làm Chủ Kỷ Nguyên AI</h4>
+                        <p class="text-muted small mb-0">Cách sử dụng AI như một trợ lý lập trình đắc lực thay vì bị công nghệ thay thế trong tương lai.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-shield-alt"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Bảo Mật & Độ Tin Cậy</h4>
+                        <p class="text-muted small mb-0">Thiết kế hệ thống phòng vệ đa lớp, xử lý ngoại lệ và đảm bảo độ khả dụng đạt 99.99%.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Lộ Trình Thăng Tiến</h4>
+                        <p class="text-muted small mb-0">Chiến lược phát triển từ Junior lên Senior và Tech Lead với bộ kỹ năng mềm lẫn kỹ thuật vượt trội.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon-box"><i class="fas fa-laptop-code"></i></div>
+                        <h4 class="fw-bold text-dark mb-2">Dự Án Thực Chiến Mẫu</h4>
+                        <p class="text-muted small mb-0">Mã nguồn mẫu hoàn chỉnh đi kèm có thể tải về chạy thử ngay trên GitHub cá nhân.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Prices Section -->
+    <section class="section-padding bg-light" id="prices">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="badge-sub">Lựa Chọn Phiên Bản</span>
+                <h2>Bảng Giá Các Gói Đặt Mua</h2>
+                <p class="text-muted col-lg-6 mx-auto mt-2">
+                    Lựa chọn định dạng sách phù hợp nhất với thói quen đọc và nhu cầu học tập của bạn.
+                </p>
+            </div>
+
+            <div class="row g-4 align-items-center">
+                <!-- Gói E-Book -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card text-center">
+                        <h4 class="fw-bold text-dark">Bản Điện Tử (E-Book)</h4>
+                        <p class="text-muted small">Đọc tiện lợi trên điện thoại, máy tính bảng</p>
+                        <div class="price-amount">189.000<small class="fs-6 text-muted">đ</small></div>
+                        <ul class="price-list text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Định dạng PDF, EPUB, MOBI</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Đọc trên mọi thiết bị số</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Cập nhật nội dung trọn đời</li>
+                            <li class="text-muted"><i class="fas fa-times text-danger me-2"></i> Sách in bìa cứng</li>
+                            <li class="text-muted"><i class="fas fa-times text-danger me-2"></i> Chữ ký tác giả</li>
+                        </ul>
+                        <button class="btn btn-outline-danger w-100 rounded-pill py-2 fw-semibold">Đặt Mua E-Book</button>
+                    </div>
+                </div>
+
+                <!-- Gói Sách Bìa Mềm (Phổ Biến Nhất) -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card popular text-center">
+                        <span class="popular-badge">PHỔ BIẾN NHẤT</span>
+                        <h4 class="fw-bold text-dark">Sách Bìa Mềm + E-Book</h4>
+                        <p class="text-muted small">Combo tối ưu cho người yêu sách giấy</p>
+                        <div class="price-amount text-danger">329.000<small class="fs-6 text-muted">đ</small></div>
+                        <ul class="price-list text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Sách in chất lượng cao 520 trang</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Tặng kèm trọn bộ E-Book số hóa</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Miễn phí giao hàng toàn quốc</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Bộ Bookmark kim loại cao cấp</li>
+                            <li class="text-muted"><i class="fas fa-times text-danger me-2"></i> Hộp quà kỷ niệm</li>
+                        </ul>
+                        <button class="btn btn-danger w-100 rounded-pill py-2 fw-semibold shadow">Đặt Mua Combo</button>
+                    </div>
+                </div>
+
+                <!-- Gói Bản Đặc Biệt -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="pricing-card text-center">
+                        <h4 class="fw-bold text-dark">Bản Đặc Biệt (Hardcover)</h4>
+                        <p class="text-muted small">Dành cho độc giả sưu tầm & doanh nghiệp</p>
+                        <div class="price-amount">589.000<small class="fs-6 text-muted">đ</small></div>
+                        <ul class="price-list text-start">
+                            <li><i class="fas fa-check text-success me-2"></i> Bìa cứng dập kim ép nhũ vàng</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Chữ ký tay kèm lời đề tặng từ tác giả</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Hộp quà sang trọng có đánh số seri</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Vé tham gia Workshop trực tiếp</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Truy cập kho tài nguyên độc quyền</li>
+                        </ul>
+                        <button class="btn btn-outline-danger w-100 rounded-pill py-2 fw-semibold">Đặt Bản Giới Hạn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Download Section -->
+    <section class="section-padding download-section" id="download">
+        <div class="container text-center py-4">
+            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-semibold mb-3">Tải Về Trải Nghiệm</span>
+            <h2 class="display-5 fw-bold text-white mb-3">Tải Đọc Thử Chương 1 Hoàn Toàn Miễn Phí</h2>
+            <p class="lead text-light opacity-80 col-lg-7 mx-auto mb-4 fs-6">
+                Nhận ngay 45 trang đầu tiên của cuốn sách ở định dạng PDF chất lượng cao để trải nghiệm văn phong và giá trị trước khi quyết định mua sách.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#" class="btn btn-danger app-btn">
+                    <i class="fas fa-file-pdf fa-2x"></i>
+                    <div>
+                        <small class="d-block text-white opacity-75">Tải Trực Tiếp</small>
+                        <span class="fs-6">Download PDF (45 Trang)</span>
+                    </div>
+                </a>
+                <a href="#" class="btn btn-outline-light app-btn">
+                    <i class="fab fa-apple fa-2x"></i>
+                    <div>
+                        <small class="d-block opacity-75">Đọc Trên iOS</small>
+                        <span class="fs-6">Apple Books</span>
+                    </div>
+                </a>
+                <a href="#" class="btn btn-outline-light app-btn">
+                    <i class="fab fa-google-play fa-2x"></i>
+                    <div>
+                        <small class="d-block opacity-75">Đọc Trên Android</small>
+                        <span class="fs-6">Google Play Books</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Reader’s Say Section -->
+    <section class="section-padding bg-white" id="readers-say">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="badge-sub">Cảm Nhận Độc Giả</span>
+                <h2>Độc Giả Nói Gì Về Cuốn Sách?</h2>
+                <p class="text-muted col-lg-6 mx-auto mt-2">
+                    Hàng nghìn kỹ sư, sinh viên và nhà quản lý công nghệ đã thay đổi tư duy sau khi đọc cuốn sách này.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Review 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mb-4 italic">
+                            "Cuốn sách đã khai sáng cho tôi cách nhìn nhận kiến trúc phần mềm một cách thấu đáo. Tác giả giải thích những khái niệm phức tạp bằng văn phong cực kỳ lôi cuốn và dễ hiểu!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=120&auto=format&fit=crop&q=80" alt="Độc giả Trần Tuấn" class="review-avatar">
+                            <div>
+                                <h5 class="fw-bold mb-0 text-dark">Trần Tuấn Anh</h5>
+                                <small class="text-muted">Senior Software Engineer tại VNG</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mb-4 italic">
+                            "Không chỉ dừng lại ở mặt kỹ thuật lập trình, cuốn sách còn truyền cho tôi tư duy đổi mới và cách quản lý sản phẩm công nghệ theo chuẩn quốc tế. Cực kỳ đáng tiền!"
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&auto=format&fit=crop&q=80" alt="Độc giả Mai Linh" class="review-avatar">
+                            <div>
+                                <h5 class="fw-bold mb-0 text-dark">Lê Thị Mai Linh</h5>
+                                <small class="text-muted">Product Manager tại FPT Software</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="review-card">
+                        <div class="star-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-secondary mb-4 italic">
+                            "Một cẩm nang không thể thiếu cho các bạn sinh viên IT năm cuối và fresher. Những lời khuyên về lộ trình thăng tiến và cách làm chủ AI trong sách thực sự vô giá."
+                        </p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=120&auto=format&fit=crop&q=80" alt="Độc giả Quốc Huy" class="review-avatar">
+                            <div>
+                                <h5 class="fw-bold mb-0 text-dark">Đỗ Quốc Huy</h5>
+                                <small class="text-muted">Tech Lead & Giảng viên CodeGym</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer Section -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold"><i class="fas fa-book-open text-warning me-2"></i>BOOKLAND</h4>
+                    <p class="text-muted small">
+                        Hệ thống phát hành và phân phối sách công nghệ chuyên sâu hàng đầu Việt Nam. Cam kết 100% sách chính hãng, hỗ trợ giải đáp trực tiếp cùng tác giả.
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h4>Đường Dẫn</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#overview" class="text-muted text-decoration-none">Tổng Quan</a></li>
+                        <li class="mb-2"><a href="#author" class="text-muted text-decoration-none">Về Tác Giả</a></li>
+                        <li class="mb-2"><a href="#features" class="text-muted text-decoration-none">Đặc Điểm Sách</a></li>
+                        <li class="mb-2"><a href="#prices" class="text-muted text-decoration-none">Bảng Giá</a></li>
+                        <li class="mb-2"><a href="#readers-say" class="text-muted text-decoration-none">Đánh Giá</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Hỗ Trợ Khách Hàng</h4>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">📍 Địa chỉ: 23 Tôn Thất Thuyết, Cầu Giấy, Hà Nội</li>
+                        <li class="mb-2">📞 Hotline: 0988 123 456 (24/7)</li>
+                        <li class="mb-2">✉️ Email: support@bookland.vn</li>
+                        <li class="mb-2">🚚 Chính sách đổi trả & giao hàng</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4>Nhận Thông Báo Xuất Bản</h4>
+                    <p class="text-muted small">Đăng ký để nhận thông tin về các ấn bản mới và mã giảm giá 20%.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control form-control-sm" placeholder="Email của bạn..." required>
+                        <button type="submit" class="btn btn-warning btn-sm fw-bold">Gửi</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top border-secondary text-center small text-muted">
+                <p class="mb-1">&copy; 2026 BOOKLAND Publishing. All rights reserved.</p>
+                <p class="mb-0">Dự án Landing Page Giới Thiệu Sách | Học viên thực hiện: <strong class="text-warning">Hoàng Văn Kim</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3.3 Bundle JS từ CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
