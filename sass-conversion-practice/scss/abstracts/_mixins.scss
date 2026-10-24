@@ -1,0 +1,22 @@
+// Mixin tái sử dụng kiểu dáng button
+@mixin button-style($bg-color) {
+    background: $bg-color;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background: darken($bg-color, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+// Mixin tái sử dụng đổ bóng
+@mixin box-shadow {
+    box-shadow: $box-shadow;
+}

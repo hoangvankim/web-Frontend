@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: $text-color;
+    background: $background-color;
+    line-height: 1.6;
+    padding: 40px 0;
+}

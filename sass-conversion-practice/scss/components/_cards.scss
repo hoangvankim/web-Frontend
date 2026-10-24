@@ -1,0 +1,19 @@
+.card {
+    background: #ffffff;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 24px;
+    @include box-shadow;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 22px;
+        color: $text-color;
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-bottom: 18px;
+        color: lighten($text-color, 15%);
+    }
+}
