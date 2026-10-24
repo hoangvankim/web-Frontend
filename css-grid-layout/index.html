@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Header - Tiêu Đề Website</h1>
+            <p>Bố cục toàn diện sử dụng CSS Grid Areas</p>
+        </header>
+
+        <nav class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Nội Dung Chính</h2>
+            <p>Trang web này sử dụng <strong>CSS Grid</strong> với thuộc tính <code>grid-template-areas</code> để thiết kế bố cục chia vùng trực quan và mạch lạc.</p>
+            <p>Trên màn hình máy tính (Desktop), Sidebar chiếm 1 phần (1fr) và Content chiếm 3 phần (3fr). Khi thu nhỏ trình duyệt xuống dưới 768px (Mobile), bố cục sẽ tự động chuyển thành dạng dọc 1 cột duy nhất.</p>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym &bull; CSS Grid Layout Responsive</p>
+        </footer>
+    </div>
+</body>
+</html>
